@@ -83,20 +83,42 @@
 	}
 
 	// Input and output function
-	void Contact::input()
+	bool Contact::input()
 	{
-		cout << "Please enter your last name: " << endl;
-		cin >> lastname;
-		cout << "Please enter your first name: " << endl;
-		cin >> firstname;
-		cin.ignore();
+		bool retVal = true;
+		string questions[4] =
+		{
+			"Please enter your last name: ",
+			"Please enter your first name: ",
+			"Please enter your phone# (10 digit only): ",
+			"Please enter your email: "
+		};
+		string input;
+	
+		for (int i = 0; i < 4; i++) 
+		{
+
+			cout << questions[i] << endl;
+			cin >> input;
+			if (input == "-1") 
+			{
+				return false;
+			}
+			if (i == 0) firstname = input;
+			if (i == 1) lastname = input;
+			if (i == 2) setphone(input);
+			if (i == 3) setemail(input);
+
+ 
+		}
+			
+			
 		
-		address.input();
-		cout << "Please enter your phone# (10 digit only): " << endl; 
-		cin >> phone;
-		setphone(phone);
-		cout << "Please enter your email: " << endl;   
-		setemail(email);
+
+	cin.ignore();
+
+	address.input();
+		return true;
 	}
 
 	void Contact::output()

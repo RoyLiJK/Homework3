@@ -29,7 +29,7 @@ public:
 
 	void setphone(string);
 	void setemail(string);
-	void input();
+	bool input();
 	void output();
 };
 #endif
