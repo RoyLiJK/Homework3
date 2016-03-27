@@ -4,7 +4,7 @@
 #include <string>
 #include<regex>
 #include"Address.h"
-using namespace std; 
+using namespace std;
 
 class Contact
 {
@@ -29,7 +29,7 @@ public:
 
 	void setphone(string);
 	void setemail(string);
-	void input();
+	bool input();
 	void output();
 };
 #endif

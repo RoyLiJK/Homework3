@@ -51,7 +51,7 @@ void Address::input()
 	cout << "Please enter your home number: " << endl;
 	getline(cin, home);
 	cout << "Please enter your street: " << endl;
-	getline(cin, street);	
+	getline(cin, street);
 	cout << "Please enter your apt number: " << endl;
 	getline(cin, apt);
 	cout << "Please enter your city: " << endl;
@@ -61,3 +61,4 @@ void Address::input()
 	cout << "Please enter your zip code: " << endl;
 	getline(cin, zip);
 }
+
