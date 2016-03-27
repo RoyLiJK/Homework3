@@ -47,7 +47,7 @@ void Address::output() const
 }
 
 void Address::input()
-{
+{	
 	cout << "Please enter your home number: " << endl;
 	getline(cin, home);
 	cout << "Please enter your street: " << endl;

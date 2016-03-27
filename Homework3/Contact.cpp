@@ -85,7 +85,7 @@ Contact::Contact(string U_lastname, string U_firstname, string U_phone, string U
 	// Input and output function
 bool Contact::input()
 {
-	//bool retVal = true;
+	cout << "Creating new contact, Enter -1 to quit" << endl;
 	string questions[4] =
 	{
 		"Please enter your last name: ",

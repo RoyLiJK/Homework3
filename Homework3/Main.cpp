@@ -54,8 +54,7 @@ int main()
 
 	while (menu > 0 && menu < 3)
 	{
-		cout << "Please make a selection from the menu below by entering the number next to your choice to proceed.\n\n";
-
+		cout << "Please enter the number your wish to proceed." << endl;
 
 		cout << "1. Search" << endl
 			 << "2. Display All" << endl
@@ -81,6 +80,11 @@ int main()
 		{
 			cout << "Program Terminated!!" << endl;
 			break;
+		}
+		else if (menu < 0 || menu >3)
+		{
+			cout << "Error!, please choose again!!" << endl;
+			cin >> menu;
 		}
 
 	}
